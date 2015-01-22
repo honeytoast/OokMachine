@@ -1,11 +1,10 @@
 # OokMachine
 A project for Theory of Computability class that emulates the execution of a turing tarpit, Ook!, Machine
 
-Included files: triangle.ook  -  Ook! program that prints out the Serpinski triangle
-ookmachine.py -  Python3 source code that emulates an Ook! machine
+Included files: triangle.ook  -  Ook! program that prints out the Serpinski triangle, ookmachine.py -  Python3 source code that emulates an Ook! machine
 
 How to run:
-python3 ookmachine.py <name of .ook file>
+python3 ookmachine.py {ook program filename}
 
 About the project:
 
