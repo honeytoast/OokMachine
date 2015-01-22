@@ -1,8 +1,7 @@
 # OokMachine
 A project for Theory of Computability class that emulates the execution of a turing tarpit, Ook!, Machine
 
-Included files:
-triangle.ook  -  Ook! program that prints out the Serpinski triangle
+Included files: triangle.ook  -  Ook! program that prints out the Serpinski triangle
 ookmachine.py -  Python3 source code that emulates an Ook! machine
 
 How to run:
@@ -22,7 +21,6 @@ This program will emulate an Ook! machine which is defined by:
 The current byte is the contents of the memory at the current value of the data pointer.
 
 An Ook! program is stored in an ASCII text file and is made up of three tokens separated by whitespace: "Ook.", "Ook!", and "Ook?". Two consecutive tokens separated by whitespace form a command. There are 8 commands:
-   Command           Action
 1. Ook. Ook?   -     Increments the data pointer
 2. Ook? Ook.   -     Decrements the data pointer
 3. Ook. Ook.   -     Increments the current byte
