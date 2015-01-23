@@ -2,6 +2,7 @@
 A project for Theory of Computability class that emulates the execution of a turing tarpit, Ook!, Machine
 
 Included files: 
+
 Filename | Description 
 ---------|------------
 triangle.ook  |  sample Ook! program that prints out the Serpinski triangle, 
