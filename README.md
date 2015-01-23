@@ -22,13 +22,15 @@ This program will emulate an Ook! machine which is defined by:
 The current byte is the contents of the memory at the current value of the data pointer.
 
 An Ook! program is stored in an ASCII text file and is made up of three tokens separated by whitespace: "Ook.", "Ook!", and "Ook?". Two consecutive tokens separated by whitespace form a command. There are 8 commands:
-1. Ook. Ook?   -     Increments the data pointer
-2. Ook? Ook.   -     Decrements the data pointer
-3. Ook. Ook.   -     Increments the current byte
-4. Ook! Ook!   -     Decrements the current byte
-5. Ook! Ook.   -     Write the current byte to stdout
-6. Ook. Ook!   -     Reads a character from stdin and overwrites the current byte with it
-7. Ook! Ook?   -     Begins a loop; if the current byte is zero, do nothing. Else, jump past the matching Ook? Ook!
-8. Ook? Ook!   -     End of a loop; jump back to the matching Ook! Ook?
+|Command       | Meaning      |
+|--------------|--------------|
+|1. Ook. Ook?   |     Increments the data pointer |
+|2. Ook? Ook.   |     Decrements the data pointer |
+|3. Ook. Ook.   |     Increments the current byte |
+|4. Ook! Ook!   |     Decrements the current byte |
+|5. Ook! Ook.   |     Write the current byte to stdout |
+|6. Ook. Ook!   |     Reads a character from stdin and overwrites the current byte with it |
+|7. Ook! Ook?   |     Begins a loop; if the current byte is zero, do nothing. Else, jump past the matching Ook? Ook! |
+|8. Ook? Ook!   |     End of a loop; jump back to the matching Ook! Ook? |
 
 Initially every memory byte, data pointer, and instruction pointer are set to 0. An Ook! machine decides the meaning of the command at the current instruction pointer, executes it, and adjusts the instruction pointer accordingly to the command that was executed. After commands 1-6, the instruction pointer is incremented by 1 so that it points to the next command. Commands 7 and 8 correspond to a while loop. The program terminates when the instruction pointer goes past the last command.
