@@ -5,8 +5,8 @@ Included files:
 
 Filename | Description 
 ---------|------------
-triangle.ook  |  sample Ook! program that prints out the Serpinski triangle, 
-ookmachine.py |  Python3 source code that emulates an Ook! machine,
+triangle.ook  |  sample Ook! program that prints out the Serpinski triangle 
+ookmachine.py |  Python3 source code that emulates an Ook! machine
 sampleout | sample output saved as a file
 
 How to run:
